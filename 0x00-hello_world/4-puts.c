@@ -1,11 +1,10 @@
 #include <stdio.h>
 /**
- * main - program print line using puts function
- *Return : 0 in success
+ * main - program that print line using pritf function
+ * Return: 0 (Success)
  */
 int main(void)
 {
-
-puts ("\"Programming is like building a multilingual puzzle");
+puts("\"Programming is like building a multilingual puzzle");
 return (0);
 }
