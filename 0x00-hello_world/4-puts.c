@@ -1,11 +1,11 @@
 #include <stdio.h>
-/*
- * main: use puts to print aline
+/**
+ * main - program print line using puts function
  *Return : 0 in success
  */
 int main(void)
 {
 
-puts("\"Programming is like building a multilingual puzzle");
-return(0);
+puts ("\"Programming is like building a multilingual puzzle");
+return (0);
 }
