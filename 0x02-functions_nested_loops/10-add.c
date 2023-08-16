@@ -4,7 +4,7 @@
 *add - sums up two numbers
 *@i: first input
 *@j: second input
-
+*
 *Return: returns sum
 */
 
