@@ -2,12 +2,12 @@
 
 /**
  * print_diagonal - draws a diagonal line on the terminal
- * @n: input number of times '\' 
+ * @n: input number of spaces '\'
+ *
  */
 void print_diagonal(int n)
 {
-	int i;
-        int j;
+int i, j;
 
 	if (n <= 0)
 	{
