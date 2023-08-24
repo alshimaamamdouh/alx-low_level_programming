@@ -1,40 +1,28 @@
 #include "main.h"
 
 /**
- *cap_string - changes all lowercase letters
- *@s: input string
- *
- *Return: return pointer to string
+ * cap_string - capitalize all words of a string
+ * @s: string with words to capitalize
+ * Return: pointer to resulting string
  */
 char *cap_string(char *s)
 {
-char special[] = {'\t', '\n', ' ', ',', ';', '!',
-		 '.', '?', '\"', '(', ')', '{', '}'};
-int i, j = 0, flag = 0;
-while (s[j] != '\0')
-{
-for (i = 0; i < 13; i++)
-{
-if (s[j] != special[i])
-{
-flag = 0;
-}
-else
-{
-flag = 1;
-}
-}
-if (flag == 1 && (s[i] >= 'a' && s[i] <= 'z'))
-{
-s[j] = s[j] - 32;
-flag = 0;
-}
-else
-{
-flag = 0;
-}
-j++;
-}
-return (s);
-}
+	char *r = s;
+	int i;
+	char a[] = " \t\n,.!?\"(){}";
+	int cap = 1;
 
+	while (*s)
+	{
+		if (cap && *s >= 'a' && *s <= 'z')
+			*s -= 32;
+		cap = 0;
+		for (i = 0; i < 12; i++)
+		{
+			if (*s == a[i])
+				cap = 1;
+		}
+		s++;
+	}
+	return (r);
+}
