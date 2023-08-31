@@ -11,16 +11,17 @@
  */
 int is_palindrome(char *s)
 {
-int i;
+int i = 0;
 int flag = 0;
 
-for (i = 0; *s != '\0' ; i++)
+if (*s != '\0')
 {
 if (*s != *(s - i - 1))
 {
 flag =1;
-break;
 }
+i++;
+is_palindrome(s + 1);
 }
 
 if (flag)
