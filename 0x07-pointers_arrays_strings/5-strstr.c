@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * _strstr - prints the consecutive caracters of s1 that are in s2.
  * @haystack: input string
@@ -21,8 +22,8 @@ char *_strstr(char *haystack, char *needle)
 		if (*j == '\0')
 		{
 			return (haystack);
-			break;
 		}
+	*haystack++;	
 	}
 	return (0);
 }
