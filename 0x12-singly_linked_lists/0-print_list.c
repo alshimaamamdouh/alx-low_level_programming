@@ -17,6 +17,7 @@ while (h)
 if (h->str == NULL)
 {
 printf("[0] (nil)\n");
+break;
 }
 else
 {
