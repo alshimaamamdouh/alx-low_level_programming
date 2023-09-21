@@ -17,13 +17,14 @@ while (h)
 if (h->str == NULL)
 {
 printf("[0] (nil)\n");
-j--;
 }
 else
 {
 printf("[%d] %s\n", h->len, h->str);
 }
 h = h->next;
+if (j >= 0xffffffff)
+	break;
 j++;
 }
 return (j);
