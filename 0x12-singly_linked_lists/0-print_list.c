@@ -22,4 +22,5 @@ printf("[%d] %s\n", h->len, h->str);
 i++;
 h = h->next;
 }
+return (i);
 }
