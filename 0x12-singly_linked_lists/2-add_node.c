@@ -1,5 +1,5 @@
-#include <string>
-#include <"lists.h">
+#include<string.h>
+#include "lists.h"
 /**
  * add_node - Adds a new node at the beginning
  *            of a list_t list.
@@ -19,7 +19,7 @@ mem = malloc(sizeof(list_t));
 if (mem == NULL)
 return (NULL);
 
-c = strc(str);
+c = strdup(str);
 if (c == NULL)
 {
 free(mem);
@@ -30,7 +30,7 @@ for (i = 0; str[i];)
 i++;
 
 mem->str = c;
-mem->i = i;
+mem->len = i;
 mem->next = *head;
 
 *head = mem;
