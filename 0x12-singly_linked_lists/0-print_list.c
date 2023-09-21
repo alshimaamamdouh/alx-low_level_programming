@@ -10,7 +10,7 @@ size_t print_list(const list_t *h)
 {
 size_t j = 0;
 if (!h)
-return (-1);
+return (0);
 
 while (h)
 {
@@ -23,9 +23,7 @@ else
 printf("[%d] %s\n", h->len, h->str);
 }
 h = h->next;
-if (j >= 0xffffffff)
-	break;
-j++;
+j = j + 1;
 }
-return (j);
+return (j + 1);
 }
