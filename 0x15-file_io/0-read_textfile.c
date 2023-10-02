@@ -8,26 +8,28 @@
  * @letters: input length
  *
  *
- * Return: number of letters it could read and print, 0 
- *
+ * Return: number of letters it could read and print
  *
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 
-ssize_t file, read_file, write_file; 
+ssize_t  file, read_file, write_file; 
 
 char *buffer;
+
+
 buffer = malloc(letters);
+
 if (buffer == NULL)
 {
 return (0);
 
 }
-if (!filename) 
+if (!filename)
 
-{ 
+{
 
 return (0);
 }
