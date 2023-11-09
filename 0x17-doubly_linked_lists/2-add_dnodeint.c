@@ -16,7 +16,7 @@ return (NULL);
 new_list->n = n;
 new_list->prev = NULL;
 new_list->next = *head;
-if(*head)
+if (*head)
 (*head)->prev = new_list;
 
 *head = new_list;
