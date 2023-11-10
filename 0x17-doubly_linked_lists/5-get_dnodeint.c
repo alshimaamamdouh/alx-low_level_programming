@@ -11,7 +11,7 @@ if (!head)
 return (NULL);
 if (index == 0)
 return (head);
-while (head->next)
+while (head)
 
 {
 head = head->next;
