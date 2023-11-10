@@ -1,4 +1,4 @@
-include "lists.h"
+#include "lists.h"
 
 /**
  * sum_dlistint - Sums all the data of a dlistint_t list.
@@ -18,3 +18,4 @@ sum += head->n;
 head = head->next;
 }
 return (sum);
+}
