@@ -21,7 +21,7 @@ while (temp->next)
 {
 temp = temp->next;
 new_l->prev = temp;
-temp->prev = new_l;
+temp->next = new_l;
 }
 }
 else
