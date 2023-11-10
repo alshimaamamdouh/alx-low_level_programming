@@ -15,10 +15,9 @@ while (head->next)
 
 {
 head = head->next;
+index--;
 if (index == 0)
 break;
-
-index--;
 }
 return (head);
 }
