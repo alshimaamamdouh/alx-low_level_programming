@@ -26,7 +26,6 @@ temp->next = new_l;
 }
 else
 {
-new_l->prev = NULL;
 *head = new_l;
 }
 return (new_l);
